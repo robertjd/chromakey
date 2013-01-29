@@ -32,6 +32,14 @@ function doLoad(){
         , document.getElementById("c1")
         , document.getElementById("c1").getContext('2d')
     ),0)
+
+
+    setInterval(timerCallback(
+        chromaKeyTransform
+        , document.getElementById("video")
+        , document.getElementById("c2")
+        , document.getElementById("c2").getContext('2d')
+    ),0)
 }
 
 function timerCallback(transform,video,destinationCanvas,destinationContext){
